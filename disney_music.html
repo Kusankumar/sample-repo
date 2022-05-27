@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Disney Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="music_container">
+        <div id="genres_container">
+            <div id="genres">
+                <ul>
+                    <li class="genre_type" type="hindi" onclick="showhideCreator('hindi_creator')">Hindi</li>
+                    <li class="genre_type" type="english" onclick="showhideCreator('english_creator')">English</li>
+                    <li class="genre_type" type="Bengali" onclick="showhideCreator('bengali_creator')">Bengali</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="artist_container">
+            <div id="CreatorList">
+                <ul id="hindi_creator">
+                    <div id="nav_creator">
+                        <li class="artist" title="" onclick="showhide('arijit_song')">
+                            <div>
+                                <img src="./image/arijit.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Arijit Singh</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="" onclick="showhide('Neeti_song')">
+                            <div>
+                                <img src="./image/neeti_mohan.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Neeti Mohan</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Dhavni Bhanushali" onclick="showhide('Dhavni_song')">
+                            <div>
+                                <img src="./image/dhavni.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Dhavni Bhanushali</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="A.R.Rahman" onclick="showhide('Arahman_song')">
+                            <div>
+                                <img src="./image/ar_rahman.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">A.R.Rahman</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Neha Kakkar" onclick="showhide('Neha_song')">
+                            <div>
+                                <img src="./image/neha_kakkar.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Neha Kakkar</div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+
+                <ul id="english_creator">
+                    <div id="nav_creator">
+                        <li class="artist" title="Alan Walker" onclick="showhide('AW_song')">
+                            <div>
+                                <img src="./image/alan_walker.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Alan Walker</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Medilyn Bailey" onclick="showhide('Medilyn_song')">
+                            <div>
+                                <img src="./image/medilyn.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Medilyn Bailey</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Marshmello" onclick="showhide('Marshmello_song')">
+                            <div>
+                                <img src="./image/marshmello.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Marshmello</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Emma Heesters" onclick="showhide('Emma_song')">
+                            <div>
+                                <img src="./image/emma2.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Emma Heesters</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Eminem" onclick="showhide('Eminem_song')">
+                            <div>
+                                <img src="./image/eminem.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Eminem</div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+
+                <ul id="bengali_creator">
+                    <div id="nav_creator">
+                        <li class="artist" title="Alka Yagnik" onclick="showhide('alka_song')">
+                            <div>
+                                <img src="./image/alka_yagnik.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Alka Yagnik</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="R.D.Burman" onclick="showhide('rdburman_song')">
+                            <div>
+                                <img src="./image/rd_barman.jpg" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">R.D.Burman</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Lata Mangeshkar" onclick="showhide('latamangeshkar_song')">
+                            <div>
+                                <img src="./image/lata_mangeshvar.webp" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Lata Mangeshkar</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Shreya Ghoshal" onclick="showhide('shreya_song')">
+                            <div>
+                                <img src="./image/shreya_dhosal.webp" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Shreya Ghoshal</div>
+                            </div>
+                        </li>
+                        <li class="artist" title="Anu Malik" onclick="showhide('anumalik_song')">
+                            <div>
+                                <img src="./image/anu_malik.webp" alt="" width="125" height="125">
+                                <div class="playButton material-icons">play_arrow</div>
+                                <div class="aName">Anu Malik</div>
+                            </div>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+
+        <div class="music_container">
+            <div class="musics">
+                <ul id="arijit_song">
+                    <h3>Arijit's Song</h3>
+                    <li><iframe style="border-radius:8px"
+                            src="https://open.spotify.com/embed/track/46NYX9zIml71qtfYYjakTI?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:8px"
+                            src="https://open.spotify.com/embed/track/0tpwqQhdfJXRcUDSNRjb9O?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:8px"
+                            src="https://open.spotify.com/embed/track/5WzfGg2ueNoOS5aIkaR9qX?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:8px"
+                            src="https://open.spotify.com/embed/track/5O932cZmzOZGOGZz9RHx20?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:8px"
+                            src="https://open.spotify.com/embed/track/3gOXq3FPPesm7VLPKmef6j?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:8px"
+                            src="https://open.spotify.com/embed/track/2FCXQHugkoHE1K3tiDu8pu?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <ul id="Neeti_song">
+                    <h3>Neeti's Song</h3>
+                    <li><iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/4iEGv5Ne6HuCkFCjzxdWQK?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/0tpwqQhdfJXRcUDSNRjb9O?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/1hQia6rxgfM1ly2hE3StWp?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/0zHZSO80CTxNtvtRhveHRJ?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li><iframe style="border-radius:12px"
+                            src="https://open.spotify.com/embed/track/7DonyrUlcVcrtk28mqvWNL?utm_source=generator&theme=0"
+                            width="60%" height="80" frameBorder="0" allowfullscreen=""
+                            allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    </li>
+                    <li></li>
+                </ul>
+                <ul id="Dhavni_song">
+                    <h3>Dhavni's Song</h3>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/2tjWCe2W7sgvS3C8NHcdtI?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/64jOyhiu4UPPnkSbG0t489?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1MhHomaXgrPMBroXkpWSSa?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0mJTAdmY8olbGQjopDYff3?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/68iBMrMRc1rg4eAxJbvxch?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                </ul>
+                <ul id="Neha_song">
+                    <h3>Neha Kakkar's Song</h3>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/5urYiIXu1ZhfMAOsp7WDTc?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/57jOEZtoLQK4zF2x55bdkp?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/6q9XTgfWilsnyiFofvYrIF?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/1r6sFC5J0p9r3jcfIoSGDM?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                    <li><iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/0TkquWzzuxcrwbCWlTrKYF?utm_source=generator&theme=0" width="60%" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe></li>
+                </ul>
+                <ul id="Arahman_song">
+                    <h3>A . R . Rahman's Song</h3>
+                    <li></li>
+                </ul>
+                <ul id="AW_song">
+                    <h3>Alan Walker's Song</h3>
+                </ul>
+                <ul id="Medilyn_song">
+                    <h3>Medilyn's Song</h3>
+                </ul>
+                <ul id="Marshmello_song">
+                    <h3>Marshmello's Song</h3>
+                </ul>
+                <ul id="Emma_song">
+                    <h3>Emma Heesters's Song</h3>
+                </ul>
+                <ul id="Eminem_song">
+                    <h3>Eminem's Song</h3>
+                </ul>
+            </div>
+        </div>
+
+        <div id="recommended_track"></div>
+        <div class="popular_track"></div>
+    </div>
+
+    <script>
+        var creatorState = {};
+        function showhideCreator(id) {
+            if (document.getElementById) {
+                var divid = document.getElementById(id);
+                creatorState[id] = (creatorState[id]) ? false : true;
+                //close others
+                for (var div in creatorState) {
+                    if (creatorState[div] && div != id) {
+                        document.getElementById(div).style.display = 'none';
+                        creatorState[div] = false;
+                    }
+                }
+                divid.style.display = (divid.style.display == 'grid' ? 'none' : 'grid');
+            }
+        }
+    </script>
+    <script>
+        var creator = document.getElementById("nav_creator");
+        var play = creator.getElementsByClassName("artist");
+        for (var i = 0; i < play.length; i++) {
+            play[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                if (current.length > 0) {
+                    current[0].className = current[0].className.replace("active", "");
+                }
+                this.className += " active";
+            });
+        }
+    </script>
+    <script>
+        var divState = {};
+        function showhide(id) {
+            if (document.getElementById) {
+                var divid = document.getElementById(id);
+                divState[id] = (divState[id]) ? false : true;
+                //close others
+                for (var div in divState) {
+                    if (divState[div] && div != id) {
+                        document.getElementById(div).style.display = 'none';
+                        divState[div] = false;
+                    }
+                }
+                divid.style.display = (divid.style.display == 'block' ? 'none' : 'block');
+            }
+        }
+    </script>
+</body>
+
+</html>
