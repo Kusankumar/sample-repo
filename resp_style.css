@@ -1,0 +1,103 @@
+@media screen and (max-width:1300px){
+    .musics iframe {
+        width: 250%;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    .musics {
+        left: 15%;
+    }
+    .musics iframe {
+        width: 230%;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #CreatorList ul #nav_creator {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    .musics {
+        left: 12%;
+    }
+}
+@media screen and (max-width:830px) {
+    .musics {
+        left: 0;
+    }
+    .musics ul{
+        margin: 0 25px;
+    }
+    .musics iframe {
+        width: 225%;
+    }
+        
+    #genres ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    #genres .genre_type {
+        width: 120px;
+        height: 60px;
+    }
+}
+@media screen and (max-width:700px) {
+    #CreatorList ul #nav_creator {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .musics iframe {
+        width: 180%;
+    }
+}
+@media screen and (max-width:650px) {
+    #CreatorList ul #nav_creator {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 15px 10px;
+    }   
+    .artist:hover {
+        background-color: transparent;
+    }
+    .artist {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px 0 0;
+        height: 80px;
+        width: 100%;
+    }
+    .resp_mb {
+        position: relative;
+    }
+    .resp_mb img {
+        transform: translateX(-15px) scale(0.5);
+    }
+    .artist .aName {
+        transform: translateY(-20px);
+    }
+    .playButton {
+        position: absolute;
+        right: -60%;
+        top: 60%;
+        transform: scale(1);
+    }
+        
+    .playButton:hover {
+        transform: translateX(3px) scale(1.4);
+    }
+    #nav_creator .active::before{
+        border-color: transparent;
+    }
+    
+}
+
+@media screen and (max-width:550px) {
+    .musics iframe {
+        width: 150%;
+    }
+}
+

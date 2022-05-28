@@ -133,7 +133,10 @@ ul {
 /*=======================================================================*/
 .musics {
     position: absolute;
-    left: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 20%;
     color: #ffffffad;
 }
 
@@ -142,7 +145,7 @@ ul {
 }
 
 .musics iframe {
-    width: 200%;
+    width: 300%;
     margin-bottom: 15px;
     opacity: 0.5;
     transition: 0.4s;
@@ -172,4 +175,31 @@ ul {
         opacity: 1;
         transform: none;
     }
+}
+
+
+#loader {
+    height: 40px;
+    width: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-top-color: #fff;
+    border-bottom-color: #fff;
+    animation: spinner3 800ms ease infinite;
+  }
+  
+  @keyframes spinner3 {
+      to {
+        transform: rotate(360deg);
+      }
+  }
+  
+.center {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
 }
